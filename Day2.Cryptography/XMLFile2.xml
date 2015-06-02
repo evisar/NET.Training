@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Payment id='1' from='Filan Fisteku' to='Fistek Filani'>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="#1">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>75UhK8P10dpk3j0aFIFHtctkMUU=</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>zq4HoSCShmD9RmXIhHdu5MMquug+TsT0VAhDqTQYoHq4p98Lxo01mBsdDAJ7Cwr/ByS270/nPgU5uXQnVtpOIJ+IpcivhJ0HH8m+sz+Mzh0ejtrRRcJN4+1Sv9ldb3qdXfcSR4f0j3uk1SS8MnOZ8tniZNv/udTxAf63cWK/W/U=</SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509SubjectName>CN=Visar.Elmazi</X509SubjectName>
+    </X509Data>
+  </KeyInfo>
+</Signature>
+</Payment>

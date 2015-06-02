@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="#1">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>75UhK8P10dpk3j0aFIFHtctkMUU=</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>RNTUSOmZMsr5f0E6sMOpaeWOQDQHSwyfl7u8DJRhZ6tMBH0H2xsP45vM2Kql6nTk7Vt00R85t3kMK/3/T+D+oPQcyVF10GCdyBu2gWO/8ROB6QDDzAhaLmtGtvXstzZ0+uO9ZcNsP7wJVxaQiyzJXzwm9O8e5ftv8yvQS2roIa5KnjbjTfT8tbbm59XS3A52op2szROBBdD27z/xq1UX08PWT6cRCBIWs0OeByjhfQrJjux5CJs3gk2wzeyxqHDDtO2qbGqU7wgSWkc6G3rHAtc99RU44oVICLZE7J/mKTle70S3V7/aZ00NzYzgdVYsL4HrSGWwPvhC9gihptzqXw==</SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509SubjectName>CN=Visar.Elmazi</X509SubjectName>
+    </X509Data>
+  </KeyInfo>
+</Signature>

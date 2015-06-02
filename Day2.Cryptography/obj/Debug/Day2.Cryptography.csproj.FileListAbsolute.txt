@@ -1,0 +1,6 @@
+C:\NET.Training\NET.Training\Day2.Cryptography\bin\Debug\Day2.Cryptography.exe.config
+C:\NET.Training\NET.Training\Day2.Cryptography\bin\Debug\Day2.Cryptography.exe
+C:\NET.Training\NET.Training\Day2.Cryptography\bin\Debug\Day2.Cryptography.pdb
+C:\NET.Training\NET.Training\Day2.Cryptography\obj\Debug\Day2.Cryptography.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day2.Cryptography\obj\Debug\Day2.Cryptography.exe
+C:\NET.Training\NET.Training\Day2.Cryptography\obj\Debug\Day2.Cryptography.pdb
