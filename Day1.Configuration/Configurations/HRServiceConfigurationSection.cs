@@ -62,7 +62,7 @@ namespace ConsoleApplication4.Configurations
             }
         }
 
-        [TimeSpanValidator(MinValueString="00:00:01", MaxValueString="00:00:30")]
+        [TimeSpanValidator(MinValueString="00:00:00", MaxValueString="00:00:30")]
         [ConfigurationProperty("timeout")]
         public TimeSpan Timeout
         {

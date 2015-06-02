@@ -1,3 +1,6 @@
 C:\NET.Training\NET.Training\Day1.Configuration\bin\Debug\ConsoleApplication4.exe.config
 C:\NET.Training\NET.Training\Day1.Configuration\obj\Debug\ConsoleApplication4.exe
 C:\NET.Training\NET.Training\Day1.Configuration\obj\Debug\ConsoleApplication4.pdb
+C:\NET.Training\NET.Training\Day1.Configuration\bin\Debug\ConsoleApplication4.exe
+C:\NET.Training\NET.Training\Day1.Configuration\bin\Debug\ConsoleApplication4.pdb
+C:\NET.Training\NET.Training\Day1.Configuration\obj\Debug\Day1.Configuration.csprojResolveAssemblyReference.cache

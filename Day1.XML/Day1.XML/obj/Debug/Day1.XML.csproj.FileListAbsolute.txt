@@ -1,0 +1,14 @@
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\obj\Debug\Day1.XML.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\NET.Training\NET.Training\Day1.XML\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\bin\Debug\ConsoleApplication1.exe.config
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\obj\Debug\ConsoleApplication1.exe
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\obj\Debug\ConsoleApplication1.pdb
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\bin\Debug\employee-instance.xml
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\bin\Debug\employee-transform.xsl
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\bin\Debug\ConsoleApplication1.exe
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\bin\Debug\ConsoleApplication1.pdb
+C:\NET.Training\NET.Training\Day1.XML\Day1.XML\obj\Debug\Day1.XML.csprojResolveAssemblyReference.cache
