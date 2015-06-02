@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="nettraining" targetNamespace="nettraining" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:complexType name="Employee">
+    <xs:attribute name="Forename" type="xs:string"/>
+    <xs:attribute name="Surename" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:element type="Employee">
+  </xs:element>
+
+</xs:schema>
+
+

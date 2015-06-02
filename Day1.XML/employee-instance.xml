@@ -1,0 +1,8 @@
+<employees>
+  <a:employee xmlns:a="CompanyA" a:forename="Visar" a:surname="Elmazi">
+  </a:employee>
+  <b:employee xmlns:b="CompanyB" b:forename="Filan" b:surname="Fisteku">
+  </b:employee>
+</employees>
+
+
