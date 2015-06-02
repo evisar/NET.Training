@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+  <configSections>
+    <section name="hrservice" type="ConsoleApplication4.Configurations.HRServiceConfigurationSection, ConsoleApplication4" />
+  </configSections>
+
+  <hrservice
+    isRemote="-1"
+    type="ConsoleApplication4.HRService, ConsoleApplication4"
+    address="http://devapp.host/services/hrservice"
+    timeout="00:00:30"
+    scalable="true">
+    <modules>
+      <module name="contacts"/>
+      <module name="salary"/>
+    </modules>
+    <printPlugin address="10.0.0.5" />
+  </hrservice>
+
+</configuration>
