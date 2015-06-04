@@ -1,0 +1,9 @@
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Day3.UnitTesting.UnitTests.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Day3.UnitTesting.UnitTests.pdb
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\obj\Debug\Day3.UnitTesting.UnitTests.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\obj\Debug\Day3.UnitTesting.UnitTests.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\obj\Debug\Day3.UnitTesting.UnitTests.pdb
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Day3.UnitTesting.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Day3.UnitTesting.pdb
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Rhino.Mocks.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting.UnitTests\bin\Debug\Rhino.Mocks.xml

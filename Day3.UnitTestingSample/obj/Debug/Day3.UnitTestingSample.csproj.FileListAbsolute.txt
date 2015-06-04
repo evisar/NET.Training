@@ -1,0 +1,11 @@
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\bin\Debug\Day3.UnitTestingSample.exe.config
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\bin\Debug\Day3.UnitTestingSample.exe
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\bin\Debug\Day3.UnitTestingSample.pdb
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\bin\Debug\Day3.UnitTesting.dll
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\bin\Debug\Day3.UnitTesting.pdb
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.Form1.resources
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.Properties.Resources.resources
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.csproj.GenerateResource.Cache
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.exe
+C:\NET.Training\NET.Training\Day3.UnitTestingSample\obj\Debug\Day3.UnitTestingSample.pdb

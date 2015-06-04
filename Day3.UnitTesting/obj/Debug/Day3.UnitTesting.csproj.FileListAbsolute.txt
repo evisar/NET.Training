@@ -1,0 +1,5 @@
+C:\NET.Training\NET.Training\Day3.UnitTesting\bin\Debug\Day3.UnitTesting.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting\bin\Debug\Day3.UnitTesting.pdb
+C:\NET.Training\NET.Training\Day3.UnitTesting\obj\Debug\Day3.UnitTesting.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day3.UnitTesting\obj\Debug\Day3.UnitTesting.dll
+C:\NET.Training\NET.Training\Day3.UnitTesting\obj\Debug\Day3.UnitTesting.pdb

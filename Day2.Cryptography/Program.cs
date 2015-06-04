@@ -22,12 +22,7 @@ namespace Day2.Cryptography
             var doc = new XmlDocument();
             doc.LoadXml("<payment id='1' from='Filan Fisteku' to='Fistek Filani'/>");
 
-            var store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
-            store.Open(OpenFlags.ReadOnly);
-            var cert = store.Certificates.Find(
-                X509FindType.FindBySubjectDistinguishedName,
-                "CN=Visar.Elmazi",
-                false)[0];
+            var cert = GetCertificate();
 
             var xmldsig = new SignedXml(doc);
             xmldsig.AddReference(new Reference("#1"));
@@ -43,6 +38,17 @@ namespace Day2.Cryptography
 
             var signatureOk = xmldsig.CheckSignature(cert, true);
             
+        }
+
+        private static X509Certificate2 GetCertificate()
+        {
+            var store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+            store.Open(OpenFlags.ReadOnly);
+            var cert = store.Certificates.Find(
+                X509FindType.FindBySubjectDistinguishedName,
+                "CN=Visar.Elmazi",
+                false)[0];
+            return cert;
         }
     }
 }
