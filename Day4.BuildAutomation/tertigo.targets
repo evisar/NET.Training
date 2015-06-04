@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  
+  <!-- source files -->
+  <ItemGroup>
+    <SourceFiles Include=".\src\**\*.*" Exclude=".\src\**\obj\**;.\src\**\bin\**;.\src\TestResults\**\*.*" />
+    <LibFiles Include=".\lib\**\*.*" />    	
+  </ItemGroup>
+  
+  <!-- target paths -->
+  <PropertyGroup>
+    <FileVersionPrefix>15.2.1</FileVersionPrefix>
+    <AssemblyVersionFixed>false</AssemblyVersionFixed>
+    <AssemblyVersionFixedValue>15.2.1</AssemblyVersionFixedValue>
+    
+    <Configuration>Release</Configuration>
+    <Build>$(MSBuildProjectDirectory)\build\</Build>
+    <Source>$(MSBuildProjectDirectory)\build\src\</Source>
+    <Lib>$(MSBuildProjectDirectory)\build\Lib\</Lib>    
+    <Distribution>$(MSBuildProjectDirectory)\dist\</Distribution>
+	<UnitTestAssemblies>$(Source)*UnitTests/bin/$(Configuration)/*UnitTests.dll</UnitTestAssemblies>
+  </PropertyGroup>
+
+  <Target Name="Version">
+
+    <CreateProperty Value="0" Condition="'$(buildNumber)' == ''">
+      <Output TaskParameter="Value" PropertyName="buildNumber"/>
+    </CreateProperty>
+
+    <CreateProperty Value="$(CCNetLabel)" Condition="'$(CCNetLabel)'!=''">
+      <Output TaskParameter="Value" PropertyName="buildNumber"/>
+    </CreateProperty>
+
+    <CreateProperty Value="$(FileVersionPrefix).$(buildNumber)">
+      <Output TaskParameter="Value" PropertyName="fileVersionNumber"/>
+    </CreateProperty>
+
+    <CreateProperty Value="$(fileVersionNumber)">
+      <Output TaskParameter="Value" PropertyName="assemblyVersionNumber"/>
+    </CreateProperty>
+
+    <CreateProperty Value="$(AssemblyVersionFixedValue)" Condition="$(AssemblyVersionFixed)">
+      <Output TaskParameter="Value" PropertyName="assemblyVersionNumber"/>
+    </CreateProperty>
+
+    <AssemblyInfo CodeLanguage="CS"
+                  OutputFile="$(SourceDir)Version.cs"
+                  AssemblyVersion="$(assemblyVersionNumber)"
+                  AssemblyFileVersion="$(fileVersionNumber)"/>
+  </Target>
+  
+  <!-- Prepare build directory -->
+  <Target Name="Prepare" AfterTargets="Version">
+    <RemoveDir Directories="$(Distribution)" />
+    <RemoveDir Directories="$(Build)" />
+    <Copy SourceFiles="@(SourceFiles)" DestinationFiles="@(SourceFiles->'$(Source)%(RecursiveDir)%(FileName)%(Extension)')"  />
+    <Copy SourceFiles="@(LibFiles)" DestinationFiles="@(LibFiles->'$(Lib)%(RecursiveDir)%(FileName)%(Extension)')" />
+    <Copy SourceFiles="Version.cs" DestinationFiles="$(Build)Version.cs" />
+  </Target>  
+  
+  <!-- Build solution -->
+  <Target Name="Build" AfterTargets="Prepare">
+    <MSBuild Projects="$(Source)tertigo.sln" Properties="Configuration=$(Configuration);Optimize=$(Optimize)" />
+  </Target>
+
+  <!-- unit testing -->
+  <Target Name="Test" AfterTargets="Build">
+	<CreateItem Include="$(UnitTestAssemblies)">
+      <Output TaskParameter="Include" ItemName="AssembliesToTest" />
+    </CreateItem>
+    <CreateProperty Value="@(AssembliesToTest ->'/testcontainer:&quot;%(fullpath)&quot;',' ')">
+      <Output TaskParameter="Value" PropertyName="testList" />
+    </CreateProperty>
+    <Exec Command="mstest.exe $(testList) /resultsfile:&quot;$(Build)mstest-results.xml&quot;" ContinueOnError="false" />
+  </Target>
+ 
+  <!-- FxCop Analysis-->
+  <Target Name="CodeAnalysis" AfterTargets="Test">
+    <Copy SourceFiles="tertigo.fxcop" DestinationFiles="$(Build)tertigo.fxcop" />
+    <FileUpdate Files="$(Build)tertigo.fxcop" Regex="bin/Debug" ReplacementText="bin/$(Configuration)" />    
+    <Exec Command="Tools\FxCop10\FxCopCmd.exe /project:$(Build)tertigo.fxcop /out:$(Build)FxCopReport.xml" />
+    <Error Condition="Exists('$(Build)FxCopReport.xml')" Text="FxCop found some broken rules!" />
+  </Target>
+
+  <Import Project="tools\MSBuild.Community.Tasks\MSBuild.Community.Tasks.Targets" />
+  
+  <!-- Deploy installer packages-->
+  <!-- <Target Name="Deploy" AfterTargets="CodeAnalysis">
+	  <Exec Command="xcopy $(Source)Framework.Security.SecurityTokenService.Deployment\bin\$(Configuration)\*.msi $(Distribution) /Y" />  
+	  <Exec Command="xcopy $(Source)Framework.Security.SecurityTokenService.Deployment\bin\$(Configuration)\*.bat $(Distribution) /Y" />  
+  </Target> -->    
+</Project>

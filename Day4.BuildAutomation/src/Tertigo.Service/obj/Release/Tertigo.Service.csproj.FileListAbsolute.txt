@@ -1,0 +1,6 @@
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\obj\Release\Tertigo.Service.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\bin\Tertigo.Service.dll.config
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\bin\Tertigo.Service.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\bin\Tertigo.Service.pdb
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\obj\Release\Tertigo.Service.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\src\Tertigo.Service\obj\Release\Tertigo.Service.pdb

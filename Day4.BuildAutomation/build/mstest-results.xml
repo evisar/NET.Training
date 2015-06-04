@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="602ae1b6-95aa-4eee-b2ab-5d31eaa0be10" name="Visar.Elmazi@SKL-VISAR-ELMA1 2015-06-04 21:26:13" runUser="SEAVUS-CORP\Visar.Elmazi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="d3dd4ad8-ec4d-4033-9182-6b41e8057483">
+    <Deployment userDeploymentRoot="C:\NET.Training\NET.Training\Day4.BuildAutomation\build" useDefaultDeploymentRoot="false" runDeploymentRoot="Visar.Elmazi_SKL-VISAR-ELMA1 2015-06-04 21_26_13" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-06-04T21:26:13.7182491+02:00" queuing="2015-06-04T21:26:13.8972599+02:00" start="2015-06-04T21:26:13.9422643+02:00" finish="2015-06-04T21:26:14.4642922+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenEmptyValue" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="dc5b478d-7d8d-85db-c24b-43ff99bd1ddc">
+      <Execution id="ef059a89-be5a-4e27-9521-0b103cbbcd4e" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenEmptyValue" />
+    </UnitTest>
+    <UnitTest name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="966c26d5-e4f1-c5c9-1841-55d51ed2e8bb">
+      <Execution id="0d725c24-2174-41aa-adc5-feba9e8893be" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult" />
+    </UnitTest>
+    <UnitTest name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfNotGivenTypeButMethodNotEmpty" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="1fa27e7b-6efc-84b6-7755-3ba9777e2f44">
+      <Execution id="858df377-9ad4-4a8f-96a8-a6d3bd416e86" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfNotGivenTypeButMethodNotEmpty" />
+    </UnitTest>
+    <UnitTest name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenTypeButEmptyMethod" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="6289dbf5-54a4-2c5a-3027-4d287fbac4d6">
+      <Execution id="73ccc577-bd96-4039-8e59-211d24565333" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenTypeButEmptyMethod" />
+    </UnitTest>
+    <UnitTest name="StaticMethodExecutor_ReturnResult_ReturnsJsonString_ForJsonContentType" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="f37388e4-f497-35aa-0184-ad24b8812813">
+      <Execution id="ea79c526-ee7b-415b-b691-fe555172cd5f" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_ReturnResult_ReturnsJsonString_ForJsonContentType" />
+    </UnitTest>
+    <UnitTest name="StaticMethodExecutor_ExecuteStaticProperty_Returns_Correct_Result" storage="c:\net.training\net.training\day4.buildautomation\build\src\tetrigo.service.unittests\bin\release\tetrigo.service.unittests.dll" id="25fb4158-a1db-8b14-e430-05281d1ff237">
+      <Execution id="accf6d5b-05b0-43e5-ad86-b2b202fbadc1" />
+      <TestMethod codeBase="C:/NET.Training/NET.Training/Day4.BuildAutomation/build/src/Tetrigo.Service.UnitTests/bin/Release/Tetrigo.Service.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tetrigo.Service.UnitTests.StaticMethodExecutorTests, Tetrigo.Service.UnitTests, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=null" name="StaticMethodExecutor_ExecuteStaticProperty_Returns_Correct_Result" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="25fb4158-a1db-8b14-e430-05281d1ff237" executionId="accf6d5b-05b0-43e5-ad86-b2b202fbadc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="966c26d5-e4f1-c5c9-1841-55d51ed2e8bb" executionId="0d725c24-2174-41aa-adc5-feba9e8893be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc5b478d-7d8d-85db-c24b-43ff99bd1ddc" executionId="ef059a89-be5a-4e27-9521-0b103cbbcd4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6289dbf5-54a4-2c5a-3027-4d287fbac4d6" executionId="73ccc577-bd96-4039-8e59-211d24565333" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fa27e7b-6efc-84b6-7755-3ba9777e2f44" executionId="858df377-9ad4-4a8f-96a8-a6d3bd416e86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f37388e4-f497-35aa-0184-ad24b8812813" executionId="ea79c526-ee7b-415b-b691-fe555172cd5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="accf6d5b-05b0-43e5-ad86-b2b202fbadc1" testId="25fb4158-a1db-8b14-e430-05281d1ff237" testName="StaticMethodExecutor_ExecuteStaticProperty_Returns_Correct_Result" computerName="SKL-VISAR-ELMA1" duration="00:00:00.0170184" startTime="2015-06-04T21:26:13.9502633+02:00" endTime="2015-06-04T21:26:14.2712812+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="accf6d5b-05b0-43e5-ad86-b2b202fbadc1">
+    </UnitTestResult>
+    <UnitTestResult executionId="0d725c24-2174-41aa-adc5-feba9e8893be" testId="966c26d5-e4f1-c5c9-1841-55d51ed2e8bb" testName="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult" computerName="SKL-VISAR-ELMA1" duration="00:00:00.0010022" startTime="2015-06-04T21:26:14.2732831+02:00" endTime="2015-06-04T21:26:14.2762820+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d725c24-2174-41aa-adc5-feba9e8893be">
+    </UnitTestResult>
+    <UnitTestResult executionId="ef059a89-be5a-4e27-9521-0b103cbbcd4e" testId="dc5b478d-7d8d-85db-c24b-43ff99bd1ddc" testName="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenEmptyValue" computerName="SKL-VISAR-ELMA1" duration="00:00:00.0054760" startTime="2015-06-04T21:26:14.2782819+02:00" endTime="2015-06-04T21:26:14.2852999+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef059a89-be5a-4e27-9521-0b103cbbcd4e">
+    </UnitTestResult>
+    <UnitTestResult executionId="73ccc577-bd96-4039-8e59-211d24565333" testId="6289dbf5-54a4-2c5a-3027-4d287fbac4d6" testName="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenTypeButEmptyMethod" computerName="SKL-VISAR-ELMA1" duration="00:00:00.0009821" startTime="2015-06-04T21:26:14.2873021+02:00" endTime="2015-06-04T21:26:14.2903015+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73ccc577-bd96-4039-8e59-211d24565333">
+    </UnitTestResult>
+    <UnitTestResult executionId="858df377-9ad4-4a8f-96a8-a6d3bd416e86" testId="1fa27e7b-6efc-84b6-7755-3ba9777e2f44" testName="StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfNotGivenTypeButMethodNotEmpty" computerName="SKL-VISAR-ELMA1" duration="00:00:00.0009545" startTime="2015-06-04T21:26:14.2912836+02:00" endTime="2015-06-04T21:26:14.2943015+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="858df377-9ad4-4a8f-96a8-a6d3bd416e86">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea79c526-ee7b-415b-b691-fe555172cd5f" testId="f37388e4-f497-35aa-0184-ad24b8812813" testName="StaticMethodExecutor_ReturnResult_ReturnsJsonString_ForJsonContentType" computerName="SKL-VISAR-ELMA1" duration="00:00:00.1515428" startTime="2015-06-04T21:26:14.2952833+02:00" endTime="2015-06-04T21:26:14.4492914+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea79c526-ee7b-415b-b691-fe555172cd5f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

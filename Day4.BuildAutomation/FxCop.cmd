@@ -1,0 +1,1 @@
+start Tools\FxCop10\FxCop.exe STS.FxCop

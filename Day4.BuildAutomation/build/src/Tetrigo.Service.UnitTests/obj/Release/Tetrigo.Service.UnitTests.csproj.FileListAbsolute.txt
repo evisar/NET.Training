@@ -1,0 +1,8 @@
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tetrigo.Service.UnitTests.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tetrigo.Service.UnitTests.pdb
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Rhino.Mocks.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tertigo.Service.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tertigo.Service.pdb
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\obj\Release\Tetrigo.Service.UnitTests.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\obj\Release\Tetrigo.Service.UnitTests.dll
+C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\obj\Release\Tetrigo.Service.UnitTests.pdb

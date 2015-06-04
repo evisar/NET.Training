@@ -1,0 +1,1367 @@
+Build started 6/4/2015 9:26:12 PM.
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" on node 1 (default targets).
+Building with tools version "4.0".
+Target "Version" in project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (entry point):
+Task "CreateProperty" skipped, due to false condition; ('$(buildNumber)' == '') was evaluated as ('2015' == '').
+Task "CreateProperty" skipped, due to false condition; ('$(CCNetLabel)'!='') was evaluated as (''!='').
+Using "CreateProperty" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "CreateProperty"
+Done executing task "CreateProperty".
+Task "CreateProperty"
+Done executing task "CreateProperty".
+Task "CreateProperty" skipped, due to false condition; ($(AssemblyVersionFixed)) was evaluated as (false).
+Using "AssemblyInfo" task from assembly "C:\NET.Training\NET.Training\Day4.BuildAutomation\tools\MSBuild.Community.Tasks\MSBuild.Community.Tasks.dll".
+Task "AssemblyInfo"
+  Created AssemblyInfo file "Version.cs".
+Done executing task "AssemblyInfo".
+Done building target "Version" in project "tertigo.targets".
+Target "Prepare" in project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (entry point):
+Using "RemoveDir" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "RemoveDir"
+  Directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\dist\" doesn't exist. Skipping.
+Done executing task "RemoveDir".
+Task "RemoveDir"
+  Removing directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\".
+Done executing task "RemoveDir".
+Using "Copy" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Copy"
+  Creating directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service".
+  Copying file from ".\src\Tertigo.Service\HttpContextWriterAdapter.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\HttpContextWriterAdapter.cs".
+  Copying file from ".\src\Tertigo.Service\IHttpContextWriter.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\IHttpContextWriter.cs".
+  Creating directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Properties".
+  Copying file from ".\src\Tertigo.Service\Properties\AssemblyInfo.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Properties\AssemblyInfo.cs".
+  Copying file from ".\src\Tertigo.Service\StaticMethodExecutor.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\StaticMethodExecutor.cs".
+  Copying file from ".\src\Tertigo.Service\tertigo.pfx" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\tertigo.pfx".
+  Copying file from ".\src\Tertigo.Service\Tertigo.Service.csproj" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj".
+  Copying file from ".\src\Tertigo.Service\Tertigo.Service.csproj.user" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj.user".
+  Copying file from ".\src\Tertigo.Service\TertigoServiceHandler.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\TertigoServiceHandler.cs".
+  Copying file from ".\src\Tertigo.Service\Web.config" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Web.config".
+  Copying file from ".\src\Tertigo.Service\Web.Debug.config" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Web.Debug.config".
+  Copying file from ".\src\Tertigo.Service\Web.Release.config" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Web.Release.config".
+  Copying file from ".\src\Tertigo.sln" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.sln".
+  Copying file from ".\src\Tertigo.v12.suo" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.v12.suo".
+  Creating directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Properties".
+  Copying file from ".\src\Tetrigo.Service.UnitTests\Properties\AssemblyInfo.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Properties\AssemblyInfo.cs".
+  Copying file from ".\src\Tetrigo.Service.UnitTests\StaticMethodExecutorTests.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\StaticMethodExecutorTests.cs".
+  Copying file from ".\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj".
+Done executing task "Copy".
+Task "Copy"
+  Creating directory "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\Lib".
+  Copying file from ".\lib\Rhino.Mocks.dll" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\Lib\Rhino.Mocks.dll".
+Done executing task "Copy".
+Task "Copy"
+  Copying file from "Version.cs" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\Version.cs".
+Done executing task "Copy".
+Done building target "Prepare" in project "tertigo.targets".
+Target "Build" in project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (entry point):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Release
+    Optimize=
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (1) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (2) on node 1 (default targets).
+Building with tools version "2.0".
+Target "ValidateSolutionConfiguration" in file "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln.metaproj" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (entry point):
+Task "Error" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{5B39843C-F4E2-45B9-AE81-BD1C730A5183}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{625A87F4-E9A9-48C2-8CFB-015C354FF373}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' != 'true')).
+Task "Warning" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) was evaluated as (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{5B39843C-F4E2-45B9-AE81-BD1C730A5183}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{625A87F4-E9A9-48C2-8CFB-015C354FF373}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' == 'true')).
+Using "Message" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Building solution configuration "Release|Any CPU".
+Done executing task "Message".
+Done building target "ValidateSolutionConfiguration" in project "tertigo.sln".
+Target "ValidateToolsVersions" in file "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln.metaproj" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (entry point):
+Task "Error" skipped, due to false condition; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) was evaluated as ('4.0' == '2.0' and ('' != '2.0' and '' != '')).
+Done building target "ValidateToolsVersions" in project "tertigo.sln".
+Target "ValidateProjects" in file "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln.metaproj" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (entry point):
+Done building target "ValidateProjects" in project "tertigo.sln".
+Target "Build" in file "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln.metaproj" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (entry point):
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    BuildingSolutionFile=true
+    CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{5B39843C-F4E2-45B9-AE81-BD1C730A5183}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+    <ProjectConfiguration Project="{625A87F4-E9A9-48C2-8CFB-015C354FF373}" AbsolutePath="C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration>
+    SolutionDir=C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\
+    SolutionExt=.sln
+    SolutionFileName=tertigo.sln
+    SolutionName=tertigo
+    SolutionPath=C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln
+  Additional Properties for project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj":
+    Configuration=Release
+    Platform=AnyCPU
+    VisualStudioVersion=11.0
+  Additional Properties for project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj":
+    Configuration=Release
+    Platform=AnyCPU
+    VisualStudioVersion=11.0
+Overriding target "GetFrameworkPaths" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "GetFrameworkPaths" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NetFramework.targets".
+Overriding target "SatelliteDllsProjectOutputGroup" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "SatelliteDllsProjectOutputGroup" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets".
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (2) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (3) on node 1 (default targets).
+Building with tools version "12.0".
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (entry point):
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Using "Message" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Configuration=Release
+Done executing task "Message".
+Task "Message"
+  Platform=AnyCPU
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\' != '' and !HasTrailingSlash('bin\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Release\' != '' and !HasTrailingSlash('obj\Release\')).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "Tertigo.Service.csproj".
+Target "EntityDeploy" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "BeforeBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Build" depends on it):
+Done building target "BeforeBuild" in project "Tertigo.Service.csproj".
+Target "BuildOnlySettings" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "BuildOnlySettings" in project "Tertigo.Service.csproj".
+Target "GetFrameworkPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NetFramework.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareForBuild" depends on it):
+Done building target "GetFrameworkPaths" in project "Tertigo.Service.csproj".
+Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Target "GetReferenceAssemblyPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareForBuild" depends on it):
+Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('.NETFramework,Version=v4.0' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+Done building target "GetReferenceAssemblyPaths" in project "Tertigo.Service.csproj".
+Target "PrepareForBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindAppConfigFile"
+Done executing task "FindAppConfigFile".
+Using "MakeDir" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MakeDir"
+  Creating directory "bin\".
+  Creating directory "obj\Release\".
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "Tertigo.Service.csproj".
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "Tertigo.Service.csproj".
+Target "AssignProjectConfiguration" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveReferences" depends on it):
+Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignProjectConfiguration"
+Done executing task "AssignProjectConfiguration".
+Done building target "AssignProjectConfiguration" in project "Tertigo.Service.csproj".
+Target "AssignProjectConfiguration" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveProjectReferences" depends on it):
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and ''!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "Tertigo.Service.csproj".
+Target "ResolveProjectReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveReferences" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '11.0' != '10.0' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '11.0' == '10.0' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+Done building target "ResolveProjectReferences" in project "Tertigo.Service.csproj".
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "GetInstalledSDKLocations" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveSDKReferences" depends on it):
+Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+Done building target "GetInstalledSDKLocations" in project "Tertigo.Service.csproj".
+Target "ResolveSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveAssemblyReferences" depends on it):
+Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+Done building target "ResolveSDKReferences" in project "Tertigo.Service.csproj".
+Target "ResolveSDKReferences" skipped. Previously built successfully.
+Target "ExpandSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveAssemblyReferences" depends on it):
+Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+Done building target "ExpandSDKReferences" in project "Tertigo.Service.csproj".
+Target "ResolveAssemblyReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveReferences" depends on it):
+Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ResolveAssemblyReference"
+  TargetFrameworkMoniker:
+      .NETFramework,Version=v4.0
+  TargetFrameworkMonikerDisplayName:
+      .NET Framework 4
+  TargetedRuntimeVersion:
+      v4.0.30319
+  Assemblies:
+      Microsoft.CSharp
+      System.Data.DataSetExtensions
+      System.Web.DynamicData
+      System.Web.Entity
+      System.Web.ApplicationServices
+      System.ComponentModel.DataAnnotations
+      System
+      System.Data
+      System.Web.Extensions
+      System.Drawing
+      System.Web
+      System.Xml
+      System.Configuration
+      System.Web.Services
+      System.EnterpriseServices
+      System.Xml.Linq
+      System.Core
+  AssemblyFiles:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
+  InstalledAssemblyTables:
+  IgnoreInstalledAssemblyTable:
+      False
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\
+  AllowedAssemblyExtensions:
+      .winmd
+      .dll
+      .exe
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+      .pri
+  AppConfigFile:
+      
+  AutoUnify:
+      False
+  CopyLocalDependenciesWhenParentReferenceInGac:
+      True
+  FindDependencies:
+      True
+  TargetProcessorArchitecture:
+      msil
+  StateFile:
+      obj\Release\Tertigo.Service.csprojResolveAssemblyReference.cache
+  InstalledAssemblySubsetTables:
+  IgnoreInstalledAssemblySubsetTable:
+      False
+  TargetFrameworkSubsets:
+  FullTargetFrameworkSubsetNames:
+      Full
+  ProfileName:
+      
+  FullFrameworkFolders:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
+  LatestTargetFrameworkDirectories:
+  ProfileTablesLocation:
+  Primary reference "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll".
+      Reference found at search path location "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll".
+      This reference is not "CopyLocal" because it's in a Frameworks directory.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.DynamicData.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.DynamicData.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Entity.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Entity.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.DataAnnotations.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.DataAnnotations.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.EnterpriseServices.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.EnterpriseServices.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+Done executing task "ResolveAssemblyReference".
+Done building target "ResolveAssemblyReferences" in project "Tertigo.Service.csproj".
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "AfterResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "Tertigo.Service.csproj".
+Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+Target "ResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "ResolveReferences" in project "Tertigo.Service.csproj".
+Target "XamlMarkupCompilePass1" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileReadGeneratedFileList" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileAddFilesGenerated" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompilePass2" skipped, due to false condition; ('$(XamlRequiresCompilationPass2)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "XamlMarkupCompileReadPass2Flag" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileAddExtensionFilesGenerated" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "MarkupCompilePass1" skipped, due to false condition; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) was evaluated as ('' != '' or '' != '' ).
+Target "AfterMarkupCompilePass1" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResources" depends on it):
+Done building target "AfterMarkupCompilePass1" in project "Tertigo.Service.csproj".
+Target "MarkupCompilePass2ForMainAssembly" skipped, due to false condition; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "FileClassification" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResources" depends on it):
+Task "FileClassifier" skipped, due to false condition; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') was evaluated as ('' != '' or '' != '' or '' != '').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Done building target "FileClassification" in project "Tertigo.Service.csproj".
+Target "MainResourcesGeneration" skipped, due to false condition; ('@(MainEmbeddedFiles)' != '') was evaluated as ('' != '').
+Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+Target "AssignTargetPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResourceNames" depends on it):
+Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.config'=='.manifest').
+Done building target "AssignTargetPaths" in project "Tertigo.Service.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResourceNames" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignCulture"
+Done executing task "AssignCulture".
+Done building target "SplitResourcesByCulture" in project "Tertigo.Service.csproj".
+Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+Target "CreateCustomManifestResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResourceNames" depends on it):
+Done building target "CreateCustomManifestResourceNames" in project "Tertigo.Service.csproj".
+Target "PrepareResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResources" depends on it):
+Done building target "PrepareResourceNames" in project "Tertigo.Service.csproj".
+Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Target "BeforeResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResGen" depends on it):
+Done building target "BeforeResGen" in project "Tertigo.Service.csproj".
+Target "CoreResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResGen" depends on it):
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' != 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CLR4' != 'CLR2').
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' == 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CLR4' == 'CLR2').
+Done building target "CoreResGen" in project "Tertigo.Service.csproj".
+Target "AfterResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "ResGen" depends on it):
+Done building target "AfterResGen" in project "Tertigo.Service.csproj".
+Target "ResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareResources" depends on it):
+Done building target "ResGen" in project "Tertigo.Service.csproj".
+Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Target "PrepareResources" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareResources" in project "Tertigo.Service.csproj".
+Target "ResolveKeySource" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Using "ResolveKeySource" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ResolveKeySource"
+Done executing task "ResolveKeySource".
+Done building target "ResolveKeySource" in project "Tertigo.Service.csproj".
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "ResolveKeySource" skipped. Previously built successfully.
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "SetWin32ManifestProperties" depends on it):
+Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "Tertigo.Service.csproj".
+Target "SetWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Done building target "SetWin32ManifestProperties" in project "Tertigo.Service.csproj".
+Target "_GenerateCompileInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateCompileInputs" in project "Tertigo.Service.csproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "_SetTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+Done building target "_SetTargetFrameworkMonikerAttribute" in project "Tertigo.Service.csproj".
+Target "GenerateTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "BeforeCompile" depends on it):
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+Input files: C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.targets
+Output files: C:\Users\visar.elmazi\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs
+Done building target "GenerateTargetFrameworkMonikerAttribute" in project "Tertigo.Service.csproj".
+Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
+Target "BeforeCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Done building target "BeforeCompile" in project "Tertigo.Service.csproj".
+Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (('$(BuildingInsideVisualStudio)' == 'true') and ('$(BuildingOutOfProcess)' != 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) was evaluated as (('' == 'true') and ('' != 'true') and (('true' == 'false') or ('true' == 'true'))).
+Target "PreXsdCodeGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreCompile" depends on it):
+Using "CallTarget" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "CallTarget"
+Target "CleanXsdCodeGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PreXsdCodeGen" depends on it):
+Using "Delete" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Delete"
+Done executing task "Delete".
+Done building target "CleanXsdCodeGen" in project "Tertigo.Service.csproj".
+Done executing task "CallTarget".
+Done building target "PreXsdCodeGen" in project "Tertigo.Service.csproj".
+Target "XsdCodeGen" skipped, due to false condition; ( '$(XsdCodeGenPreCondition)' == 'True' ) was evaluated as ( 'False' == 'True' ).
+Target "CoreCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Building target "CoreCompile" completely.
+Output file "obj\Release\Tertigo.Service.dll" does not exist.
+Using "Csc" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Csc"
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.EnterpriseServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Entity.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug:pdbonly /keycontainer:VS_KEY_6DB621B8C40FB66F /out:obj\Release\Tertigo.Service.dll /target:library /utf8output ..\..\Version.cs HttpContextWriterAdapter.cs IHttpContextWriter.cs Properties\AssemblyInfo.cs StaticMethodExecutor.cs TertigoServiceHandler.cs "C:\Users\visar.elmazi\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+  Microsoft (R) Visual C# Compiler version 4.0.30319.34209
+  
+  for Microsoft (R) .NET Framework 4.5
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+Done executing task "Csc".
+Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
+Done building target "CoreCompile" in project "Tertigo.Service.csproj".
+Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "AfterCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Done building target "AfterCompile" in project "Tertigo.Service.csproj".
+Target "PrepareResourcesForSatelliteAssemblies" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
+Target "MergeLocalizationDirectives" skipped, due to false condition; ('@(GeneratedLocalizationFiles)' !='') was evaluated as ('' !='').
+Target "AfterCompileWinFX" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "_AfterCompileWinFXInternal" depends on it):
+Done building target "AfterCompileWinFX" in project "Tertigo.Service.csproj".
+Target "_AfterCompileWinFXInternal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Compile" depends on it):
+Done building target "_AfterCompileWinFXInternal" in project "Tertigo.Service.csproj".
+Target "Compile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "Compile" in project "Tertigo.Service.csproj".
+Target "ExportWindowsMDFile" skipped, due to false condition; ('$(ExportWinMDFile)' == 'true') was evaluated as ('' == 'true').
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\Tertigo.Service.csproj.UnmanagedRegistration.cache')).
+Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "_GenerateSatelliteAssemblyInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CreateSatelliteAssemblies" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateSatelliteAssemblyInputs" in project "Tertigo.Service.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+Target "CreateSatelliteAssemblies" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "CreateSatelliteAssemblies" in project "Tertigo.Service.csproj".
+Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='' or '$(GenerateAppxManifest)' == 'true') was evaluated as (''=='true' or ''!='' or ''!='' or '' == 'true').
+Target "GetTargetPath" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "GetTargetPath" in project "Tertigo.Service.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "Tertigo.Service.csproj".
+Target "GetCopyToOutputDirectoryItems" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryItems" in project "Tertigo.Service.csproj".
+Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopySourceItemsToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CopySourceItemsToOutputDirectory" in project "Tertigo.Service.csproj".
+Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Target "_CheckForCompileOutputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CheckForCompileOutputs" in project "Tertigo.Service.csproj".
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "CopyFilesToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareForRun" depends on it):
+Using "Copy" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Copy"
+  Copying file from "obj\Release\Tertigo.Service.dll" to "bin\Tertigo.Service.dll".
+Done executing task "Copy".
+Task "Message"
+  Tertigo.Service -> C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll
+Done executing task "Message".
+Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+  Copying file from "obj\Release\Tertigo.Service.pdb" to "bin\Tertigo.Service.pdb".
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+Done building target "CopyFilesToOutputDirectory" in project "Tertigo.Service.csproj".
+Target "_GetSilverlightApplications" skipped, due to false condition; ('$(SilverlightApplicationList)' != '') was evaluated as ('' != '').
+Target "CopySilverlightApplications" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\WebApplications\Microsoft.WebApplication.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareForRun" depends on it):
+Task "MSBuild" skipped, due to false condition; ('@(_SilverlightApplications)' != '') was evaluated as ('' != '').
+Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '@(_SilverlightApplications)' != '') was evaluated as ('' != 'true' and '' != '').
+Task "CopyFilesToFolders" skipped, due to false condition; ('@(_SilverlightXapFiles)' != '') was evaluated as ('' != '').
+Task "Warning" skipped, due to false condition; ('@(_SilverlightApplicationsNotExist)'!='') was evaluated as (''!='').
+Done building target "CopySilverlightApplications" in project "Tertigo.Service.csproj".
+Target "_CopyBinDeployableAssemblies" skipped, due to false condition; (Exists('$(MSBuildProjectDirectory)\_bin_deployableAssemblies')) was evaluated as (Exists('C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\_bin_deployableAssemblies')).
+Target "_CopyWebApplication" skipped, due to false condition; (!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)') was evaluated as (!False And 'bin\' != 'bin\').
+Target "_BuiltWebOutputGroupOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\WebApplications\Microsoft.WebApplication.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "PrepareForRun" depends on it):
+Using "CreateItem" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "CreateItem"
+Done executing task "CreateItem".
+Task "CreateItem" skipped, due to false condition; ('$(OutDir)' != '$(OutputPath)') was evaluated as ('bin\' != 'bin\').
+Done building target "_BuiltWebOutputGroupOutput" in project "Tertigo.Service.csproj".
+Target "PrepareForRun" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "Tertigo.Service.csproj".
+Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
+Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "IncrementalClean" depends on it):
+Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ConvertToAbsolutePath"
+Done executing task "ConvertToAbsolutePath".
+Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindUnderPath"
+  Comparison path is "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "bin\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Release\".
+Done executing task "FindUnderPath".
+Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "Tertigo.Service.csproj".
+Target "IncrementalClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "CoreBuild" depends on it):
+Task "FindUnderPath"
+  Comparison path is "bin\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Release\".
+Done executing task "FindUnderPath".
+Task "Delete"
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "IncrementalClean" in project "Tertigo.Service.csproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+Target "CoreBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "Tertigo.Service.csproj".
+Target "AfterBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "Tertigo.Service.csproj".
+Target "Build" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (entry point):
+Done building target "Build" in project "Tertigo.Service.csproj".
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (default targets).
+
+Overriding target "GetFrameworkPaths" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "GetFrameworkPaths" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NetFramework.targets".
+Overriding target "SatelliteDllsProjectOutputGroup" in project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" with target "SatelliteDllsProjectOutputGroup" from project "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets".
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (2) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (4) on node 1 (default targets).
+Building with tools version "12.0".
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (entry point):
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Message"
+  Configuration=Release
+Done executing task "Message".
+Task "Message"
+  Platform=AnyCPU
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Release\' != '' and !HasTrailingSlash('bin\Release\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Release\' != '' and !HasTrailingSlash('obj\Release\')).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "Tetrigo.Service.UnitTests.csproj".
+Target "EntityDeploy" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+Target "BeforeBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Build" depends on it):
+Done building target "BeforeBuild" in project "Tetrigo.Service.UnitTests.csproj".
+Target "BuildOnlySettings" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "BuildOnlySettings" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GetFrameworkPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NetFramework.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareForBuild" depends on it):
+Done building target "GetFrameworkPaths" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Target "GetReferenceAssemblyPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareForBuild" depends on it):
+Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('.NETFramework,Version=v4.0' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+Done building target "GetReferenceAssemblyPaths" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PrepareForBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Task "FindAppConfigFile"
+Done executing task "FindAppConfigFile".
+Task "MakeDir"
+  Creating directory "bin\Release\".
+  Creating directory "obj\Release\".
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "BeforeResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AssignProjectConfiguration" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveReferences" depends on it):
+Task "AssignProjectConfiguration"
+  Project reference "..\Tertigo.Service\Tertigo.Service.csproj" has been assigned the "Release|AnyCPU" configuration.
+Done executing task "AssignProjectConfiguration".
+Done building target "AssignProjectConfiguration" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AssignProjectConfiguration" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveProjectReferences" depends on it):
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and '..\Tertigo.Service\Tertigo.Service.csproj'!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveProjectReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveReferences" depends on it):
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' == 'true' and '..\Tertigo.Service\Tertigo.Service.csproj' != '' and ('' == 'true' or 'true' != 'true') and '11.0' != '10.0' and '..\Tertigo.Service\Tertigo.Service.csproj' != '').
+Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' == 'true' and '..\Tertigo.Service\Tertigo.Service.csproj' != '' and ('' == 'true' or 'true' != 'true') and '11.0' == '10.0' and '..\Tertigo.Service\Tertigo.Service.csproj' != '').
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Release
+    Platform=AnyCPU
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (4) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (3:2) on node 1 (default targets).
+Building with tools version "12.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "Build" skipped. Previously built successfully.
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (default targets).
+
+Done executing task "MSBuild".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Release
+    Platform=AnyCPU
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (4) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (3:3) on node 1 (GetNativeManifest target(s)).
+Building with tools version "12.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "GetNativeManifest" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (entry point):
+Done building target "GetNativeManifest" in project "Tertigo.Service.csproj".
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (GetNativeManifest target(s)).
+
+Done executing task "MSBuild".
+Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('..\Tertigo.Service\Tertigo.Service.csproj' != '' and '' != '').
+Done building target "ResolveProjectReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "GetInstalledSDKLocations" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveSDKReferences" depends on it):
+Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+Done building target "GetInstalledSDKLocations" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveAssemblyReferences" depends on it):
+Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+Done building target "ResolveSDKReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveSDKReferences" skipped. Previously built successfully.
+Target "ExpandSDKReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveAssemblyReferences" depends on it):
+Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+Done building target "ExpandSDKReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveAssemblyReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveReferences" depends on it):
+Task "ResolveAssemblyReference"
+  TargetFrameworkMoniker:
+      .NETFramework,Version=v4.0
+  TargetFrameworkMonikerDisplayName:
+      .NET Framework 4
+  TargetedRuntimeVersion:
+      v4.0.30319
+  Assemblies:
+      Rhino.Mocks
+          HintPath = '..\..\lib\Rhino.Mocks.dll'
+      System
+      Microsoft.VisualStudio.QualityTools.UnitTestFramework
+      System.Core
+  AssemblyFiles:
+      C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
+  InstalledAssemblyTables:
+  IgnoreInstalledAssemblyTable:
+      False
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\Release\
+  AllowedAssemblyExtensions:
+      .winmd
+      .dll
+      .exe
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+      .pri
+  AppConfigFile:
+      
+  AutoUnify:
+      True
+  CopyLocalDependenciesWhenParentReferenceInGac:
+      True
+  FindDependencies:
+      True
+  TargetProcessorArchitecture:
+      msil
+  StateFile:
+      obj\Release\Tetrigo.Service.UnitTests.csprojResolveAssemblyReference.cache
+  InstalledAssemblySubsetTables:
+  IgnoreInstalledAssemblySubsetTable:
+      False
+  TargetFrameworkSubsets:
+  FullTargetFrameworkSubsetNames:
+      Full
+  ProfileName:
+      
+  FullFrameworkFolders:
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
+  LatestTargetFrameworkDirectories:
+  ProfileTablesLocation:
+  Primary reference "Tertigo.Service, Version=15.2.1.2015, Culture=neutral, PublicKeyToken=1f51822e86ba43f7".
+      Resolved file path is "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll".
+      Reference found at search path location "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll".
+      Found related file "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.pdb".
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified primary reference "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Using this version instead of original version "2.0.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll".
+      Reference found at search path location "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f".
+      Resolved file path is "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll".
+      Reference found at search path location "{HintPathFromItem}".
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Rhino.Mocks.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Rhino.Mocks.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Rhino.Mocks.exe", but it didn't exist.
+      The ImageRuntimeVersion for this reference is "v2.0.50727".
+  Unified primary reference "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Using this version instead of original version "2.0.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Primary reference "Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Resolved file path is "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll".
+      Reference found at search path location "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+      This reference is not "CopyLocal" because it's registered in the GAC.
+      The ImageRuntimeVersion for this reference is "v2.0.50727".
+  Unified primary reference "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Using this version instead of original version "3.5.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Core.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.winmd", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified Dependency "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Using this version instead of original version "2.0.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin".
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.winmd", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.dll", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.winmd", but it didn't exist.
+      Required by "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll".
+      Required by "Microsoft.VisualStudio.QualityTools.UnitTestFramework".
+      Required by "Rhino.Mocks".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Dependency "System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin".
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.Extensions.winmd", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.Extensions.dll", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Web.Extensions.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Extensions.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Extensions.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Extensions.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.winmd", but it didn't exist.
+      Required by "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified Dependency "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Using this version instead of original version "2.0.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin".
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Xml.winmd", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Xml.dll", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\System.Xml.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Xml.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Xml.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Xml.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.winmd", but it didn't exist.
+      Required by "Rhino.Mocks".
+      Required by "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified Dependency "System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Using this version instead of original version "2.0.0.0" in "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" because there is a more recent version of this framework file.
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib".
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\System.Configuration.winmd", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\System.Configuration.dll", but it didn't exist.
+          Considered "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\System.Configuration.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Configuration.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Configuration.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Configuration.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.winmd", but it didn't exist.
+      Required by "Rhino.Mocks".
+      Required by "Microsoft.VisualStudio.QualityTools.UnitTestFramework".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified Dependency "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Data.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Data.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Data.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Data.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Data.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.winmd", but it didn't exist.
+      Required by "Microsoft.VisualStudio.QualityTools.UnitTestFramework".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  Unified Dependency "System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+      Using this version instead of original version "2.0.0.0" in "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" because there is a more recent version of this framework file.
+      Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Web.Services.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Web.Services.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\System.Web.Services.exe", but it didn't exist.
+          For SearchPath "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages".
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Services.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Services.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\microsoft shared\VSTT\11.0\UITestExtensionPackages\System.Web.Services.exe", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.winmd", but it didn't exist.
+      Required by "Microsoft.VisualStudio.QualityTools.UnitTestFramework".
+      This reference is not "CopyLocal" because it's a prerequisite file.
+      The ImageRuntimeVersion for this reference is "v4.0.30319".
+  AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}"
+          C:\Program Files\Reference Assemblies\Microsoft\Workflow Manager\1.0\
+          C:\Program Files (x86)\Microsoft WCF Data Services\5.6\bin\.NETFramework\
+          C:\Program Files (x86)\Common Files\microsoft shared\VSTT\10.0\UITestExtensionPackages
+          C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v8.0\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Common\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v4.0\
+          C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\x64\
+          c:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\
+          C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Itanium\
+          c:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+          C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Tasks
+          C:\Program Files (x86)\Microsoft SQL Server\120\DTS\PipelineComponents\
+          C:\Program Files (x86)\Microsoft SQL Server\120\DTS\ForEachEnumerators
+          C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Connections\
+          C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\
+          
+          C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\WorkflowActivities\
+          C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\
+          C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Server\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\
+          c:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+          C:\Program Files (x86)\Open XML SDK\V2.5\lib
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v4.0\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.3.0.0\Type Providers\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.3.0.0\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.3.1.0\
+          C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Prototyping\Libraries\
+          C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VSTSDB\
+          C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\
+          C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\
+          
+          C:\Program Files\Reference Assemblies\Microsoft\Microsoft Identity Extensions\1.0\
+          C:\Program Files (x86)\WiX Toolset v3.8\SDK\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v9.0\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v10.0\
+          C:\Program Files\Common Files\Microsoft Shared\VS7DEBUG\Program Files\Reference Assemblies\Microsoft\VSTA30\v11.0\.NET2.0\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+          C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+          C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v2.0\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+          C:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0
+          C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\ADO.NET\V2.0\x64\
+          C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+          c:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\
+          C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\
+          C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\x86\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v2.0\2.3.0.0\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Blend\
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\Blend\
+          C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\
+          C:\Program Files\Microsoft SQL Server\120\DTS\Tasks
+          C:\Program Files\Microsoft SQL Server\120\DTS\PipelineComponents\
+          C:\Program Files\Microsoft SQL Server\120\DTS\ForEachEnumerators
+          C:\Program Files\Microsoft SQL Server\120\DTS\Connections\
+Done executing task "ResolveAssemblyReference".
+Done building target "ResolveAssemblyReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "AfterResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+Target "ResolveReferences" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "ResolveReferences" in project "Tetrigo.Service.UnitTests.csproj".
+Target "XamlMarkupCompilePass1" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileReadGeneratedFileList" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileAddFilesGenerated" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompilePass2" skipped, due to false condition; ('$(XamlRequiresCompilationPass2)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "XamlMarkupCompileReadPass2Flag" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "XamlMarkupCompileAddExtensionFilesGenerated" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
+Target "MarkupCompilePass1" skipped, due to false condition; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) was evaluated as ('' != '' or '' != '' ).
+Target "AfterMarkupCompilePass1" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResources" depends on it):
+Done building target "AfterMarkupCompilePass1" in project "Tetrigo.Service.UnitTests.csproj".
+Target "MarkupCompilePass2ForMainAssembly" skipped, due to false condition; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) was evaluated as ('false' == 'true' ).
+Target "FileClassification" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResources" depends on it):
+Task "FileClassifier" skipped, due to false condition; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') was evaluated as ('' != '' or '' != '' or '' != '').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
+Done building target "FileClassification" in project "Tetrigo.Service.UnitTests.csproj".
+Target "MainResourcesGeneration" skipped, due to false condition; ('@(MainEmbeddedFiles)' != '') was evaluated as ('' != '').
+Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+Target "AssignTargetPaths" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResourceNames" depends on it):
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+Done building target "AssignTargetPaths" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResourceNames" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "AssignCulture"
+Done executing task "AssignCulture".
+Done building target "SplitResourcesByCulture" in project "Tetrigo.Service.UnitTests.csproj".
+Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+Target "CreateCustomManifestResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResourceNames" depends on it):
+Done building target "CreateCustomManifestResourceNames" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PrepareResourceNames" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResources" depends on it):
+Done building target "PrepareResourceNames" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Target "BeforeResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResGen" depends on it):
+Done building target "BeforeResGen" in project "Tetrigo.Service.UnitTests.csproj".
+Target "CoreResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResGen" depends on it):
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' != 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CLR4' != 'CLR2').
+Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' == 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CLR4' == 'CLR2').
+Done building target "CoreResGen" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AfterResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "ResGen" depends on it):
+Done building target "AfterResGen" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareResources" depends on it):
+Done building target "ResGen" in project "Tetrigo.Service.UnitTests.csproj".
+Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Target "PrepareResources" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareResources" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "SetWin32ManifestProperties" depends on it):
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "Tetrigo.Service.UnitTests.csproj".
+Target "SetWin32ManifestProperties" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Done building target "SetWin32ManifestProperties" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_GenerateCompileInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateCompileInputs" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+Target "_SetTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+Done building target "_SetTargetFrameworkMonikerAttribute" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GenerateTargetFrameworkMonikerAttribute" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "BeforeCompile" depends on it):
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+Input files: C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.targets
+Output files: C:\Users\visar.elmazi\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs
+Done building target "GenerateTargetFrameworkMonikerAttribute" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
+Target "BeforeCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Done building target "BeforeCompile" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (('$(BuildingInsideVisualStudio)' == 'true') and ('$(BuildingOutOfProcess)' != 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) was evaluated as (('' == 'true') and ('' != 'true') and (('true' == 'false') or ('true' == 'true'))).
+Target "PreXsdCodeGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreCompile" depends on it):
+Task "CallTarget"
+Target "CleanXsdCodeGen" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PreXsdCodeGen" depends on it):
+Task "Delete"
+Done executing task "Delete".
+Done building target "CleanXsdCodeGen" in project "Tetrigo.Service.UnitTests.csproj".
+Done executing task "CallTarget".
+Done building target "PreXsdCodeGen" in project "Tetrigo.Service.UnitTests.csproj".
+Target "XsdCodeGen" skipped, due to false condition; ( '$(XsdCodeGenPreCondition)' == 'True' ) was evaluated as ( 'False' == 'True' ).
+Target "CoreCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Building target "CoreCompile" completely.
+Output file "obj\Release\Tetrigo.Service.UnitTests.dll" does not exist.
+Task "Csc"
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll /debug:pdbonly /filealign:512 /out:obj\Release\Tetrigo.Service.UnitTests.dll /target:library /utf8output ..\..\Version.cs StaticMethodExecutorTests.cs Properties\AssemblyInfo.cs "C:\Users\visar.elmazi\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+  Microsoft (R) Visual C# Compiler version 4.0.30319.34209
+  
+  for Microsoft (R) .NET Framework 4.5
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+Done executing task "Csc".
+Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
+Done building target "CoreCompile" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
+Target "AfterCompile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Done building target "AfterCompile" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PrepareResourcesForSatelliteAssemblies" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
+Target "MergeLocalizationDirectives" skipped, due to false condition; ('@(GeneratedLocalizationFiles)' !='') was evaluated as ('' !='').
+Target "AfterCompileWinFX" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "_AfterCompileWinFXInternal" depends on it):
+Done building target "AfterCompileWinFX" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_AfterCompileWinFXInternal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Compile" depends on it):
+Done building target "_AfterCompileWinFXInternal" in project "Tetrigo.Service.UnitTests.csproj".
+Target "Compile" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "Compile" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ExportWindowsMDFile" skipped, due to false condition; ('$(ExportWinMDFile)' == 'true') was evaluated as ('' == 'true').
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\Tetrigo.Service.UnitTests.csproj.UnmanagedRegistration.cache')).
+Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "_GenerateSatelliteAssemblyInputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CreateSatelliteAssemblies" depends on it):
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateSatelliteAssemblyInputs" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+Target "CreateSatelliteAssemblies" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "CreateSatelliteAssemblies" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='' or '$(GenerateAppxManifest)' == 'true') was evaluated as (''=='true' or ''!='' or ''!='' or '' == 'true').
+Target "GetTargetPath" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "GetTargetPath" in project "Tetrigo.Service.UnitTests.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "_CopyFilesMarkedCopyLocal" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Task "Copy"
+  Copying file from "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\lib\Rhino.Mocks.dll" to "bin\Release\Rhino.Mocks.dll".
+  Copying file from "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.dll" to "bin\Release\Tertigo.Service.dll".
+  Copying file from "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\bin\Tertigo.Service.pdb" to "bin\Release\Tertigo.Service.pdb".
+Done executing task "Copy".
+Done building target "_CopyFilesMarkedCopyLocal" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "Tetrigo.Service.UnitTests.csproj".
+Target "GetCopyToOutputDirectoryItems" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+Task "MSBuild"
+  Global Properties:
+    Configuration=Release
+    Platform=AnyCPU
+Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (4) is building "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (3:4) on node 1 (GetCopyToOutputDirectoryItems target(s)).
+Building with tools version "12.0".
+Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryItems" skipped. Previously built successfully.
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tertigo.Service\Tertigo.Service.csproj" (GetCopyToOutputDirectoryItems target(s)).
+
+Done executing task "MSBuild".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryItems" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopySourceItemsToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CopySourceItemsToOutputDirectory" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Target "_CheckForCompileOutputs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CheckForCompileOutputs" in project "Tetrigo.Service.UnitTests.csproj".
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "CopyFilesToOutputDirectory" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "PrepareForRun" depends on it):
+Task "Copy"
+  Copying file from "obj\Release\Tetrigo.Service.UnitTests.dll" to "bin\Release\Tetrigo.Service.UnitTests.dll".
+Done executing task "Copy".
+Task "Message"
+  Tetrigo.Service.UnitTests -> C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tetrigo.Service.UnitTests.dll
+Done executing task "Message".
+Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+  Copying file from "obj\Release\Tetrigo.Service.UnitTests.pdb" to "bin\Release\Tetrigo.Service.UnitTests.pdb".
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+Done building target "CopyFilesToOutputDirectory" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PrepareForRun" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "Tetrigo.Service.UnitTests.csproj".
+Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
+Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "IncrementalClean" depends on it):
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Task "ConvertToAbsolutePath"
+Done executing task "ConvertToAbsolutePath".
+Task "FindUnderPath"
+  Comparison path is "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "bin\Release\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Release\".
+Done executing task "FindUnderPath".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "Tetrigo.Service.UnitTests.csproj".
+Target "IncrementalClean" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "CoreBuild" depends on it):
+Task "FindUnderPath"
+  Comparison path is "bin\Release\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Release\".
+Done executing task "FindUnderPath".
+Task "Delete"
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
+Done building target "IncrementalClean" in project "Tetrigo.Service.UnitTests.csproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+Target "CoreBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "Tetrigo.Service.UnitTests.csproj".
+Target "AfterBuild" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "Tetrigo.Service.UnitTests.csproj".
+Target "Build" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" from project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (entry point):
+Done building target "Build" in project "Tetrigo.Service.UnitTests.csproj".
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\Tetrigo.Service.UnitTests.csproj" (default targets).
+
+Done executing task "MSBuild".
+Done building target "Build" in project "tertigo.sln".
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\tertigo.sln" (default targets).
+
+Done executing task "MSBuild".
+Done building target "Build" in project "tertigo.targets".
+Target "Test" in project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (entry point):
+Using "CreateItem" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "CreateItem"
+Done executing task "CreateItem".
+Task "CreateProperty"
+Done executing task "CreateProperty".
+Using "Exec" task from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Exec"
+  mstest.exe /testcontainer:"C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tetrigo.Service.UnitTests.dll" /resultsfile:"C:\NET.Training\NET.Training\Day4.BuildAutomation\build\mstest-results.xml"
+  Microsoft (R) Test Execution Command Line Tool Version 10.0.30319.1
+  Copyright (c) Microsoft Corporation. All rights reserved.
+      
+  Loading C:\NET.Training\NET.Training\Day4.BuildAutomation\build\src\Tetrigo.Service.UnitTests\bin\Release\Tetrigo.Service.UnitTests.dll...
+  Starting execution...
+  
+  Results               Top Level Tests
+  -------               ---------------
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_ExecuteStaticProperty_Returns_Correct_Result
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenEmptyValue
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfGivenTypeButEmptyMethod
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_GetTypeAndMethod_ReturnsCorrectResult_IfNotGivenTypeButMethodNotEmpty
+  Passed                Tetrigo.Service.UnitTests.StaticMethodExecutorTests.StaticMethodExecutor_ReturnResult_ReturnsJsonString_ForJsonContentType
+  6/6 test(s) Passed
+  
+  Summary
+  -------
+  Test Run Completed.
+    Passed  6
+    ---------
+    Total   6
+  Results file:  C:\NET.Training\NET.Training\Day4.BuildAutomation\build\mstest-results.xml
+  Test Settings: Default Test Settings
+Done executing task "Exec".
+Done building target "Test" in project "tertigo.targets".
+Target "CodeAnalysis" in project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (entry point):
+Task "Copy"
+  Copying file from "tertigo.fxcop" to "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\tertigo.fxcop".
+Done executing task "Copy".
+Using "FileUpdate" task from assembly "C:\NET.Training\NET.Training\Day4.BuildAutomation\tools\MSBuild.Community.Tasks\MSBuild.Community.Tasks.dll".
+Task "FileUpdate"
+  Updating File "C:\NET.Training\NET.Training\Day4.BuildAutomation\build\tertigo.fxcop".
+    Replaced matches with "bin/Release".
+Done executing task "FileUpdate".
+Task "Exec"
+  Tools\FxCop10\FxCopCmd.exe /project:C:\NET.Training\NET.Training\Day4.BuildAutomation\build\tertigo.fxcop /out:C:\NET.Training\NET.Training\Day4.BuildAutomation\build\FxCopReport.xml
+  Microsoft (R) FxCop Command-Line Tool, Version 10.0 (10.0.30319.1) X86
+  Copyright (C) Microsoft Corporation, All Rights Reserved.
+  
+  Loading C:\NET.Training\NET.Training\Day4.BuildAutomation\build\tertigo.fxcop...
+  Loaded DesignRules.dll...
+  Loaded GlobalizationRules.dll...
+  Loaded InteroperabilityRules.dll...
+  Loaded MobilityRules.dll...
+  Loaded NamingRules.dll...
+  Loaded PerformanceRules.dll...
+  Loaded PortabilityRules.dll...
+  Loaded SecurityRules.dll...
+  Loaded SecurityTransparencyRules.dll...
+  Loaded UsageRules.dll...
+  Loaded Tertigo.Service.dll...
+  Initializing Introspection engine...
+  Analyzing...
+  Analysis Complete.
+  No messages written.
+  Done:00:00:01.0296270
+Done executing task "Exec".
+Task "Error" skipped, due to false condition; (Exists('$(Build)FxCopReport.xml')) was evaluated as (Exists('C:\NET.Training\NET.Training\Day4.BuildAutomation\build\FxCopReport.xml')).
+Done building target "CodeAnalysis" in project "tertigo.targets".
+Done Building Project "C:\NET.Training\NET.Training\Day4.BuildAutomation\tertigo.targets" (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.68
