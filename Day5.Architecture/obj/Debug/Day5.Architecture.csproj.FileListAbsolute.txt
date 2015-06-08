@@ -1,0 +1,7 @@
+C:\NET.Training\NET.Training\Day5.Architecture\bin\Debug\Day5.Architecture.exe.config
+C:\NET.Training\NET.Training\Day5.Architecture\bin\Debug\Day5.Architecture.exe
+C:\NET.Training\NET.Training\Day5.Architecture\bin\Debug\Day5.Architecture.pdb
+C:\NET.Training\NET.Training\Day5.Architecture\obj\Debug\Day5.Architecture.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day5.Architecture\obj\Debug\Day5.Architecture.exe
+C:\NET.Training\NET.Training\Day5.Architecture\obj\Debug\Day5.Architecture.pdb
+C:\NET.Training\NET.Training\Day5.Architecture\bin\Debug\PersonMaturityAgeRule.rule

@@ -1,0 +1,8 @@
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\bin\Debug\Day5.HollywoodPrinciple.exe.config
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\bin\Debug\Day5.HollywoodPrinciple.exe
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\bin\Debug\Day5.HollywoodPrinciple.pdb
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\bin\Debug\Day5.HollywoodDependency.dll
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\bin\Debug\Day5.HollywoodDependency.pdb
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\obj\Debug\Day5.HollywoodPrinciple.csprojResolveAssemblyReference.cache
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\obj\Debug\Day5.HollywoodPrinciple.exe
+C:\NET.Training\NET.Training\Day5.HollywoodPrinciple\obj\Debug\Day5.HollywoodPrinciple.pdb

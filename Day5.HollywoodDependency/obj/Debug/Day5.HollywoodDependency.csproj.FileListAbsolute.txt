@@ -1,0 +1,4 @@
+C:\NET.Training\NET.Training\Day5.HollywoodDependency\bin\Debug\Day5.HollywoodDependency.dll
+C:\NET.Training\NET.Training\Day5.HollywoodDependency\bin\Debug\Day5.HollywoodDependency.pdb
+C:\NET.Training\NET.Training\Day5.HollywoodDependency\obj\Debug\Day5.HollywoodDependency.dll
+C:\NET.Training\NET.Training\Day5.HollywoodDependency\obj\Debug\Day5.HollywoodDependency.pdb
